@@ -1,0 +1,1 @@
+This folder must contain the json files with the information required for the project

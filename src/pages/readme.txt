@@ -1,0 +1,1 @@
+this folder must contain the father component of all pages susch as Product, Home, Characteristics, and so on

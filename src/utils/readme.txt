@@ -1,0 +1,1 @@
+This folder must contains the reusable components like header, footer, buttons and so on
