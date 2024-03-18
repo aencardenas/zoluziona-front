@@ -1,12 +1,10 @@
-import './App.css'
+import Header from './utils/Header';
 
 function App() {
 
   return (
     <>
-      <p className="text-3xl text-green-20">
-        ZOLUZIONA
-      </p>
+      <Header/>
     </>
   )
 }
