@@ -1,0 +1,75 @@
+{
+    "Characteristics": {
+      "AltaSeguridad": {
+        "name": "Alta Seguridad",
+        "descriptions": [
+          "Ofrecen una mayor estabilidad térmica y una estabilidad inherente, lo que las hace altamente seguras.",
+          "Tienen una resistencia a la sobrecarga que minimiza el riesgo de daños o fallos debido a voltajes excesivos."
+        ],
+        "img": ""
+      },
+      "CicloDeVida": {
+        "name": "Ciclo de vida prolongado",
+        "descriptions": [
+           "Ofrecen una mayor estabilidad térmica y una estabilidad inherente, lo que las hace altamente seguras.",
+           "Capacidad de más de 3,500 ciclos de funcionamiento. ",
+           "Ahorro significativo a largo plazo, ya que no es necesario reemplazarlas con frecuencia.",
+           "Estabilidad química inherente garantiza una degradación mínima con el tiempo, a diferencia de otras baterías de iones de litio y plomo ácido.",
+           "Ofrecen una fuente de energía confiable y duradera a lo largo del tiempo."
+        ],
+        "img": ""
+      },
+      "CapacidadCarga": {
+        "name": "Capacidade de carga rápida",
+        "descriptions": [
+           "Capacidad de carga excepcional, lo que les permite recargarse más rápidamente en comparación con otras baterías químicas.",
+           "Baja resistencia interna, lo que les permite manejar corrientes de carga más altas sin acumular o degradar calor de manera significativa.",
+           "Garantiza tiempos de inactividad mínimos y una productividad máxima para una variedad de aplicaciones."
+        ],
+        "img": ""
+      },
+      "AltaDensidad": {
+        "name": "Alta densidad de energía",
+        "descriptions": [
+            "Alta densidad de energía, lo que les permite almacenar una cantidad significativa de energía en un formato compacto y ligero.",
+            "Ofrece múltiples beneficios, incluyendo tiempos de ejecución prolongados para diversas aplicaciones, garantizando un suministro de energía adecuado durante períodos extendidos.",
+            "El diseño compacto y liviano las hace ideales para situaciones donde el espacio y el peso son críticos.",
+            "La alta densidad de energía contribuye a mejorar la eficiencia general y reducir el consumo de energía, proporcionando un rendimiento optimizado y una mayor duración de la batería."
+        ],
+        "img": ""
+      },
+      "TasaAutodescarga": {
+        "name": "Baja tasa de autodescarga",
+        "descriptions": [
+            "Nuestras baterías tienen una baja tasa de autodescarga, exhiben una pérdida de energía mínima con el tiempo y reduce la necesidad de recargas o mantenimiento frecuentes."
+        ],
+        "img": ""
+      },
+      "Temperatura": {
+        "name": "Amplio rango de temperatura",
+        "descriptions": [
+            "Amplio rango de temperatura de funcionamiento, lo que les permite operar eficientemente tanto en entornos de altas temperaturas, hasta 60º C, como en condiciones de baja temperatura.",
+            "Ideales para aplicaciones en climas cálidos o bajo cargas térmicas intensas.",
+            "Rendimiento superior a temperaturas bajas en comparación con otras tecnologías químicas de baterías."
+        ], 
+        "img": ""
+      },
+      "Ecofriendly": {
+        "name": "Ecofriendly",
+        "descriptions": [
+            "Química más ecológica en comparación con otras tecnologías de iones de litio y plomo-ácido.",
+            "Libres de materiales tóxicos como cobalto y plomo, lo que facilita su reciclaje y contribuye a una solución energética más sostenible.",
+            "La ausencia de materiales nocivos reduce el impacto ambiental, desde la producción hasta la eliminación, garantizando prácticas más seguras y minimizando el riesgo de contaminación del suelo y el agua."
+        ],
+        "img": ""
+      },
+      "DisenoLiviando": {
+        "name": "Diseño liviando",
+        "img": ""
+      },
+      "Mantenimiento": {
+        "name": "Cero mantenimiento",
+        "img": ""
+      }
+    }
+  }
