@@ -1,5 +1,8 @@
-import ambientLogo from "../assets/icons/ambiental.png"
+import ambientLogo from "../assets/icons/ambiental.png";
+import data from "../data/characteristics.json";
+
 export default function CharacteristicsHome() {
+    
     return (
         <>
             <div>
