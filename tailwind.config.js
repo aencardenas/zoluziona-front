@@ -17,6 +17,10 @@ export default {
         'black-101': '#353435',
         'gray-30': '#B6B6B5',
         'gray-20': '#CCCBCC',
+      },
+
+      fontFamily:{
+        'montserrat': ["Montserrat", "sans-serif"]
       }
     },
   },
