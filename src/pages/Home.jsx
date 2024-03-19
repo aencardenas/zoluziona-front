@@ -1,8 +1,8 @@
-import Header from "../utils/Header";
+import Footer from "../utils/Footer";
 export default function Home() {
     return (
         <>
-            <Header />
+            <Footer />
         </>
 
     );

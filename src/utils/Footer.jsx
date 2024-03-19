@@ -1,16 +1,20 @@
-import logo from "../assets/images/footer-logo"
+import logo from "../assets/images/footer-logo.png"
 
 export default function Footer() {
 
     return (
         <>
-            <footer>
-                <div>
+            <footer className="bg-black-100 p-2">
+                <div className="flex justify-between items-center">
                     <div>
-                        <p>Necesitas ayuda? Contactanos</p>
+                        <p className="flex flex-col text-white text-center ml-2">Necesitas ayuda? <strong>Contactanos</strong></p>
                     </div>
-                    <div>
-                        <img src={logo} alt="Zoluziona logo"/>
+                    <div className="flex items-center">
+                        <img
+                            src={logo}
+                            alt="Zoluziona logo"
+                            className="w-32"
+                        />
                     </div>
                 </div>
             </footer>
