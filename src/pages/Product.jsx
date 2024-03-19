@@ -1,5 +1,6 @@
 import Header from "../utils/Header";
 import Line from "../utils/Line";
+import ProductInfo from "../components/ProductInfo";
 import batteryImage from "../assets/images/battery.png";
 
 export default function Product() {
@@ -20,6 +21,7 @@ export default function Product() {
         </p>
       </div>
       <Line />
+      <ProductInfo />
     </>
   );
 }

@@ -1,36 +1,50 @@
-{
-    "product": {
-      "title": "LiFePO4",
-      "description": "Las baterías de fosfato de hierro y litio (LiFePO4) destacan por su mayor potencia de salida, carga rápida, peso reducido y vida útil prolongada. En comparación con las baterías de iones de litio basadas en cobalto, las LiFePO4 ofrecen una mayor seguridad, siendo menos propensas a la combustión y fuga térmica. Además, su ciclo de vida extendido, que puede llegar a ser hasta cuatro o cinco veces más largo, las convierte en una opción más duradera.",
-      "details": {
-        "names": [
-          "Peso",
-          "Tiempo de Carga",
-          "Voltaje",
-          "Capacidad almacenamiento eléctrico",
-          "Bateria sellada",
-          "Vida útil",
-          "Materiales tóxicos",
-          "Ciclos de carga",
-          "Mantenimiento",
-          "Rango de temperatura",
-          "Garantía",
-          "Usos"
-        ],
-        "values": [
-          "17.23kg aprox.",
-          "1.5hrs aprox.",
-          "48 V",
-          "30 Ah",
-          "Sí",
-          "2 veces mayor a las baterias ácido-plomo",
-          "Ninguno",
-          "3500",
-          "Ninguno",
-          "-20°C a 60°C",
-          "8 años",
-          "Marino, camping, casas, carros de golf, etc"
-        ]
-      }
-    }
+[
+  {
+    "name": "Peso",
+    "data": "17.23kg aprox."
+  },
+  {
+    "name": "Tiempo de carga",
+    "data": "1.5hrs aprox."
+  },
+  {
+    "name": "Voltaje",
+    "data": "48V"
+  },
+  {
+    "name": "Capacidad de almacenamiento eléctrico",
+    "data": "40Ah"
+  },
+  {
+    "name": "Bateria sellada",
+    "data": "Sí"
+  },
+  {
+    "name": "Vida útil",
+    "data": "2 veces mayor a las baterias ácido'plomo"
+  },
+  {
+    "name": "Materiales tóxicos",
+    "data": "Ninguno"
+  },
+  {
+    "name": "Ciclos de carga",
+    "data": "3500"
+  },
+  {
+    "name": "Mantenimiento",
+    "data": "Ninguno"
+  },
+  {
+    "name": "Rango de temperatura",
+    "data": "-20°C a 60°C"
+  },
+  {
+    "name": "Garantía",
+    "data": "8 años"
+  },
+  {
+    "name": "Usos",
+    "data": "Marino, camping, casas, carros de golf, etc"
   }
+]
