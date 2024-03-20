@@ -1,6 +1,9 @@
 import Header from "../utils/Header";
 import Line from "../utils/Line";
 import ProductInfo from "../components/ProductInfo";
+import ProductButton from "../utils/ProductButton";
+import ProductEspecifications from "../components/ProductEspecifications";
+import Footer from "../utils/Footer";
 import batteryImage from "../assets/images/battery.png";
 
 export default function Product() {
@@ -8,7 +11,11 @@ export default function Product() {
     <>
       <Header />
       <div className="flex flex-col mx-7">
-        <img src={batteryImage} alt=""  className="w-[240px] self-center my-10" />
+        <img
+          src={batteryImage}
+          alt=""
+          className="w-[240px] self-center my-10"
+        />
         <h2 className="text-2xl font-semibold text-blue-62">LiFePO4</h2>
         <p className="text-sm">
           Las baterías de fosfato de hierro y litio (LiFePO4) destacan por su
@@ -22,6 +29,31 @@ export default function Product() {
       </div>
       <Line />
       <ProductInfo />
+      <Line />
+
+      <div className="flex flex-col gap-3 mx-7 min-w-56">
+        <ProductButton text="Cotiza con nosotros" />
+        <ProductButton text="Condiciones de pago" />
+      </div>
+
+      <Line />
+
+      <h2 className="text-2xl font-semibold text-blue-62 mx-7">
+        ESPECIFICACIONES
+      </h2>
+
+      <ProductEspecifications />
+
+      <Line />
+
+      <div className="mb-10">
+        <h2 className="text-2xl font-semibold text-blue-62 mx-7 mb-2">
+          FICHA TECNICA
+        </h2>
+        <ProductButton text="Desgargar ficha" />
+      </div>
+
+      <Footer />
     </>
   );
 }
