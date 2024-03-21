@@ -9,26 +9,35 @@ import boat from "../assets/icons/lancha.png";
 import games from "../assets/icons/videojuegos.png";
 
 export default function ApplicationsHome() {
+
+    const applications = [
+        { image: lowSpeedCar, text: 'Autos eléctricos' },
+        { image: golfCar, text: 'Carro de golf' },
+        { image: boat, text: 'Marinas' },
+        { image: home, text: 'Hogar' },
+        { image: electronics, text: 'Electrónicos' },
+        { image: solar, text: 'Solar' },
+        { image: games, text: 'Videojuegos' },
+        { image: eolic, text: 'Eólica' }
+    ]
     return (
 
         <>
             <div>
-                <div className="flex justify-center pb-4">
+                <div className="flex justify-center pb-6">
                     <h1 className="font-semibold text-2xl text-black-101">APLICACIONES</h1>
                 </div>
-                <div>
-                    <div className="flex flex-col">
-                        <img src={car} alt="Auto" />
-                        <span>Autos</span>
-                    </div>
-                    <div className="flex flex-col">
-                        <img src={lowSpeedCar} alt="Auto baja velocidad" />
-                        <span>Autos</span>
-                    </div>
-                    <div className="flex flex-col">
-                        <img src={golfCar} alt="Carro de golf" />
-                        <span>Autos</span>
-                    </div>
+                <div className="flex flex-wrap items-end gap-4 justify-center">
+                    {applications.map((application, index) => (
+                        <div key={index} className="flex flex-col justify-center items-center min-w-32">
+                            <img
+                                src={application.image}
+                                alt={application.text}
+                                className="w-16"
+                            />
+                            <span>{application.text}</span>
+                        </div>
+                    ))}
                 </div>
             </div>
         </>
