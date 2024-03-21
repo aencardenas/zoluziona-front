@@ -3,7 +3,7 @@ export default function Especifications(props) {
     <>
       <div className="flex bg-green-28 text-white p-[2px]">
         <svg
-          className="w-6 h-6 text-white"
+          className="w-6 h-6 text-blue-70"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
