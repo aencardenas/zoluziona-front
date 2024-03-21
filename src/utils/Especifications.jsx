@@ -1,7 +1,7 @@
 export default function Especifications(props) {
   return (
     <>
-      <div className="flex bg-green-28 text-white p-[2px]">
+      <div className="flex items-center bg-green-28 text-white p-[2px] lg:h-[45px] lg:text-2xl">
         <svg
           className="w-6 h-6 text-blue-70"
           aria-hidden="true"
