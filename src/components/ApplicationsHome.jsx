@@ -25,17 +25,17 @@ export default function ApplicationsHome() {
         <>
             <div>
                 <div className="flex justify-center pb-6">
-                    <h1 className="font-semibold text-2xl text-black-101">APLICACIONES</h1>
+                    <h1 className="font-semibold text-2xl text-black-101 lg:text-[32px] lg:font-bold">APLICACIONES</h1>
                 </div>
-                <div className="flex flex-wrap items-end gap-4 justify-center">
+                <div className="flex flex-wrap items-end gap-4 justify-center lg:gap-8">
                     {applications.map((application, index) => (
-                        <div key={index} className="flex flex-col justify-center items-center min-w-32">
+                        <div key={index} className="flex flex-col justify-center items-center min-w-32 lg:gap-3">
                             <img
                                 src={application.image}
                                 alt={application.text}
-                                className="w-16"
+                                className="w-16 lg:w-36"
                             />
-                            <span>{application.text}</span>
+                            <span className="lg:text-xl">{application.text}</span>
                         </div>
                     ))}
                 </div>

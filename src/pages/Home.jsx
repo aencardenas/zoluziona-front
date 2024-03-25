@@ -11,7 +11,7 @@ export default function Home() {
         <>
             <Header />
             <BatteryHome />
-            <div className="pt-5 pl-3 pb-4">
+            <div className="pt-5 pl-3 pb-4 lg:flex lg:justify-center">
                 <CharacteristicsHome />
             </div>
             <Line />
