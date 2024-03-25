@@ -21,11 +21,11 @@ export default function Header() {
             d="M5 7h14M5 12h14M5 17h14"
           />
         </svg>
-        <div className="hidden lg:block">
-          <ul className="flex gap-8 text-white font-semibold mr-10">
+        <div className="hidden lg:block mr-7">
+          <ul className="flex text-white gap-7 font-semibold text-lg">
             <li>Inicio</li>
             <li>Producto</li>
-            <li>Caraterísticas</li>
+            <li>Características</li>
             <li>Contacto</li>
           </ul>
         </div>

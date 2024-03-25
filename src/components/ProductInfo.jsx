@@ -25,7 +25,7 @@ export default function ProductInfo() {
 
   return (
     <>
-      <div className="flex justify-center ">
+      <div className="flex justify-center">
         <table className="w-full">
           <tbody>
             {table.getRowModel().rows.map((row) => (
