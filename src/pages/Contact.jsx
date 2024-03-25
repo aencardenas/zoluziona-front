@@ -7,12 +7,13 @@ export default function Contact() {
   return (
     <>
       <Header />
+      <div className="mx-8 max-w-[700px] lg:w-full lg:mx-auto">
+        <h2 className="my-3 font-bold text-xl lg:text-3xl">Contáctanos</h2>
 
-      <h2 className="mx-8 my-3 font-bold text-xl">Contáctanos</h2>
+        <Form />
 
-       <Form />
-
-      <Card />
+        <Card />
+      </div>
 
       <Footer />
     </>

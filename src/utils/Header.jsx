@@ -23,10 +23,10 @@ export default function Header() {
         </svg>
         <div className="hidden lg:block mr-7">
           <ul className="flex text-white gap-7 font-semibold text-lg">
-            <li>Inicio</li>
-            <li>Producto</li>
-            <li>Características</li>
-            <li>Contacto</li>
+            <li className="cursor-pointer">Inicio</li>
+            <li className="cursor-pointer">Producto</li>
+            <li className="cursor-pointer">Características</li>
+            <li className="cursor-pointer">Contacto</li>
           </ul>
         </div>
       </div>
