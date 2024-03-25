@@ -4,7 +4,7 @@ export default function ProductEspecifications() {
   const esp = ['Eléctricas', 'Mécanicas', 'Carga', 'Descarga', 'Temperatura', 'Legales'];
   return (
     <>
-      <div className="flex flex-col mx-7 gap-3 mt-2">
+      <div className="flex flex-col  gap-4 mt-2 lg:gap-7">
         {
           esp.map((esp,i) => (
             <Especifications
