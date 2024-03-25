@@ -27,9 +27,9 @@ export default function CertificationsHome() {
                             <img src={certification} className={`w-[150px] ${index === 6 ? 'pl-4' : ''}`} />
                             {index === 6 &&
 
-                                <div className="max-w-32 flex flex-col gap-1 text-center">
-                                    <h1 className="font-semibold text-[9px] text-black lg:text-base">U.S OWNED & OPERATED</h1>
-                                    <p className="font-normal text-[8px] text-black lg:text-xs">U.S based company dedicated to providing fully supported lithium energy solutions</p>
+                                <div className="max-w-32 flex flex-col gap-1 text-center lg:max-w-36 lg:mt-2">
+                                    <h1 className="font-semibold text-[9px] text-black lg:text-[10px]">U.S OWNED & OPERATED</h1>
+                                    <p className="font-normal text-[8px] text-black lg:text-[9px]">U.S based company dedicated to providing fully supported lithium energy solutions</p>
                                 </div>
                             }
                         </div>
