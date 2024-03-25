@@ -25,13 +25,13 @@ export default function ProductInfo() {
 
   return (
     <>
-      <div className="mx-7 flex justify-center">
+      <div className="flex justify-center">
         <table className="w-full">
           <tbody>
             {table.getRowModel().rows.map((row) => (
               <tr key={row.id}>
                 {row.getVisibleCells().map((cell) => (
-                  <td key={cell.id} className="flex-col align-top text-[12px] w-1/2 first:font-bold">
+                  <td key={cell.id} className="flex-col align-top text-[12px] w-1/2 first:font-bold lg:text-lg">
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </td>
                 ))}

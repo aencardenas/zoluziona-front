@@ -1,7 +1,7 @@
 export default function Especifications(props) {
   return (
     <>
-      <div className="flex bg-green-28 text-white p-[2px]">
+      <div className="flex bg-green-28 text-white p-[5px] items-center">
         <svg
           className="w-6 h-6 text-blue-70"
           aria-hidden="true"
@@ -18,7 +18,7 @@ export default function Especifications(props) {
           />
         </svg>
 
-        <p className="font-semibold">{props.text}</p>
+        <p className="font-medium lg:text-lg">{props.text}</p>
       </div>
     </>
   );
