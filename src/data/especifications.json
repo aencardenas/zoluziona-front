@@ -1,0 +1,158 @@
+{
+    "electricalTable": [
+        {
+            "name": "Nominal Voltage",
+            "value": "51.2V"
+        },
+        {
+            "name": "Nominal Capacity",
+            "value": "30Ah"
+        },
+        {
+            "name": "Capacity @ 25A",
+            "value": "72 min"
+        },
+        {
+            "name": "Resistance",
+            "value": "≤30 mΩ @50% SOC"
+        },
+        {
+            "name": "Efficiency",
+            "value": "99%"
+        },
+        {
+            "name": "Self Discharge",
+            "value": "3-5% when disconnected"
+        },
+        {
+            "name": "Maximum Modules in Parallel",
+            "value": "6-8"
+        }
+    ],
+    "machanicalTable": [
+        {
+            "name": "Dimensions (L x W x H)",
+            "value": "10.2 x 7 x 9.75 in"
+        },
+        {
+            "name": "Weight",
+            "value": "38 lbs"
+        },
+        {
+            "name": "Terminal Type",
+            "value": "M8"
+        },
+        {
+            "name": "Terminal Material",
+            "value": "Brass"
+        },
+        {
+            "name": "Case Material",
+            "value": "ABS"
+        },
+        {
+            "name": "Enclosure Protection",
+            "value": "IP54"
+        },
+        {
+            "name": "Cell Type - Chemistry",
+            "value": "Cylindrical - LiFePO4"
+        }
+    ],
+    "temperatureTable": [
+        {
+            "name": "Discharge Temperature",
+            "value": "-4°F to 140°F (-20°C to 60°C)"
+        },
+        {
+            "name": "Charge Temperature",
+            "value": "32°F to 131°F (0°C to 60°C)"
+        },
+        {
+            "name": "Storage Temperature",
+            "value": "-32°F to 113°F (0°C to 45°C)"
+        },
+        {
+            "name": "BMS High Temperature Cut Off",
+            "value": "176°F (80 °C)"
+        },
+        {
+            "name": "Reconnect Temperature",
+            "value": "122°F (50 °C) ~ 140°F (60 °C)"
+        }
+    ],
+    "dischargeTable": [
+        {
+            "name": "Maximum Continuous Discharge Current",
+            "value": "30A"
+        },
+        {
+            "name": "Peak Discharge Current",
+            "value": "60A (10s)"
+        },
+        {
+            "name": "BMS Discharge Current Cut-Off",
+            "value": "≤105A±2A ; ≤1s"
+        },
+        {
+            "name": "Recomended Low Voltage Disconnect",
+            "value": "40V (2.5V)" 
+        },
+        {
+            "name": "BMS Discharge Voltage Cut-Off",
+            "value": "32V (2.0V±0.08 vpc)"
+        },
+        {
+            "name": "Reconnect Voltage",
+            "value": "36.8V (2.3V±0.1 vpc)"
+        },
+        {
+            "name": "Short Circuit Protection",
+            "value": "200-500ms"
+        }
+    ],
+    "chargeTable": [
+        {
+            "name": "Recommended Charge Current",
+            "value": "7.5A - 15A"
+        },
+        {
+            "name": "Maximum Charge Current",
+            "value": "30A"
+        },
+        {
+            "name": "Charge Current 14° to 32°F (-10 to 0°C)",
+            "value": "≤0.1°C"
+        },
+        {
+            "name": "Change Current -4° to 14°F (-20 to -10°C)",
+            "value": "≤0.05°C"
+        },
+        {
+            "name": "Recommended Charge Voltage",
+            "value": "40V - 59.2V"
+        },
+        {
+            "name": "BMS Charge Voltage Cut-Off",
+            "value": "62.4V (3.9V±0.05 vpc)"
+        },
+        {
+            "name": "Recconect Voltage",
+            "value": "61.6V (3.85V±0.05 vpc)"
+        },
+        {
+            "name": "Balancing Voltage",
+            "value": "56.8V (3.55V±0.025 vpc)"
+        }
+    ],
+    "complianceTable": [
+        {
+            "name": "Certifications",
+            "value": "UN38.3 (Battery), UL1642, IEC62133 (Cells)"
+        },
+        {
+            "name": "Shipping clasisfication",
+            "value": "UN3480 - Class 9"
+        }
+    ]
+}
