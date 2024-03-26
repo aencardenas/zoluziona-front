@@ -4,7 +4,7 @@ import {
   flexRender,
 } from "@tanstack/react-table";
 import data from "../data/especifications.json";
-import Especifications from "../utils/Especifications";
+import { useState } from "react";
 
 const useGenerateTable = (tableData, columns) => {
   const table = useReactTable({
@@ -14,19 +14,21 @@ const useGenerateTable = (tableData, columns) => {
   });
 
   const generateTable = () => (
-    <table className="w-full">
-      <tbody>
-        {table.getRowModel().rows.map((row) => (
-          <tr key={row.id}>
-            {row.getVisibleCells().map((cell) => (
-              <td key={cell.id} className="p-2 border">
-                {flexRender(cell.column.columnDef.cell, cell.getContext())}
-              </td>
-            ))}
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <>
+      <table className="w-full">
+        <tbody>
+          {table.getRowModel().rows.map((row) => (
+            <tr key={row.id}>
+              {row.getVisibleCells().map((cell) => (
+                <td key={cell.id} className="p-2 border">
+                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
   );
 
   return generateTable;
@@ -35,11 +37,11 @@ const useGenerateTable = (tableData, columns) => {
 const TableElectricalEsp = () => {
   const columns = [
     {
-      header: "Data",
+      header: "",
       accessorKey: "name",
     },
     {
-      header: "Value",
+      header: "",
       accessorKey: "value",
     },
   ];
@@ -51,31 +53,52 @@ const TableElectricalEsp = () => {
   const chargeTable = useGenerateTable(data.chargeTable, columns);
   const complianceTable = useGenerateTable(data.complianceTable, columns);
 
-
   const especifictions = [
-    {especification: "Eléctricas", table: electricalTable},
-    {especification: "Mécanicas", table: mechanicalTable},
-    {especification: "Carga", table: chargeTable},
-    {especification: "Descarga", table: dischargeTable},
-    {especification: "Temperatura", table: temperatureTable},
-    {especification: "Legales", table: complianceTable},
-  ]
+    {id:"electricas", especification: "Eléctricas", table: electricalTable },
+    {id:"mecanicas", especification: "Mécanicas", table: mechanicalTable },
+    {id:"carga", especification: "Carga", table: chargeTable },
+    {id:"descarga", especification: "Descarga", table: dischargeTable },
+    {id:"temperatura", especification: "Temperatura", table: temperatureTable },
+    {id:"legales", especification: "Legales", table: complianceTable },
+  ];
+
+  const [openTables, setOpenTables] = useState(especifictions.reduce((acc, curr) => {
+    acc[curr.id] = false;
+    return acc;
+  }));
+
+  const toggleTable = (id) => {
+    setOpenTables((prev) => ({ ...prev, [id]: !prev[id] }));
+  }
 
   return (
     <>
-        <div className="flex flex-col gap-10">
-            {
-                especifictions.map((item, i) => (
-                <div key={i} className="">
-                    <Especifications 
-                    text = {item.especification}
-                    />
-                    {item.table()}
-                </div>
-                ))
-            }
-      </div>
+      <div className="flex flex-col gap-5">
+        {especifictions.map((item, i) => (
+          <div key={i}>
+            <div className="flex bg-green-28 text-white p-[5px] items-center cursor-pointer" onClick={() => toggleTable(item.id)}>
+              <svg
+                className="w-6 h-6 text-blue-70"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.271 5.575C8.967 4.501 7 5.43 7 7.12v9.762c0 1.69 1.967 2.618 3.271 1.544l5.927-4.881a2 2 0 0 0 0-3.088l-5.927-4.88Z"
+                  clipRule="evenodd"
+                />
+              </svg>
 
+              <p className="font-medium lg:text-lg">{item.especification}</p>
+            </div>
+            <div className={`${openTables[item.id] ? '' : 'hidden'}`}>{item.table()}</div>
+          </div>
+        ))}
+      </div>
     </>
   );
 };
