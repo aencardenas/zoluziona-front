@@ -29,7 +29,7 @@ export default function ApplicationsHome() {
                 </div>
                 <div className="flex flex-wrap items-end gap-4 justify-center lg:gap-8">
                     {applications.map((application, index) => (
-                        <div key={index} className="flex flex-col justify-center items-center min-w-32 lg:gap-3">
+                        <div key={index} className="flex flex-col justify-center items-center min-w-32 lg:gap-x-20">
                             <img
                                 src={application.image}
                                 alt={application.text}
