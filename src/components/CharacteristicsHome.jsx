@@ -28,8 +28,8 @@ export default function CharacteristicsHome() {
                 <div className="flex justify-center pb-4">
                     <h1 className="font-semibold text-2xl text-black-101 lg:text-[32px] lg:font-bold lg:mt-4">CARACTERÍSTICAS</h1>
                 </div>
-                <div className="md:flex md:justify-center">
-                    <ul className="pb-4 md:columns-2 lg:columns-2">
+                <div className="xs:flex xs:justify-center md:flex md:justify-center">
+                    <ul className="pb-4 xs:columns-2 md:columns-2 lg:columns-2">
                         {data.characteristics.map((characteristic, index) => (
                             <li key={index} className="flex items-center lg:mr-8">
                                 <img

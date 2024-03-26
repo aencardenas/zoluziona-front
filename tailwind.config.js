@@ -5,6 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'xs': '480px',
+      'md': '768px',
+      'lg': '1024px'
+    },
     extend: {
       colors: {
         'green-34': '#33A835',
