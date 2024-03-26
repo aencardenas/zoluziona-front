@@ -2,7 +2,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Home from "./pages/Home";
 import Product from "./pages/Product";
 import Contact from "./pages/Contact";
-import Table from "./pages/Table";
+import Characteristic from "./pages/Characteristic";
+
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     { path: '/home', element: <Home /> },
     { path: '/product', element: <Product /> },
     { path: '/contact', element: <Contact /> },
+    { path: '/characteristic', element: <Characteristic />}
     
   ])
   return (
