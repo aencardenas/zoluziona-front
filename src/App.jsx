@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Home from "./pages/Home";
 import Product from "./pages/Product";
 import Contact from "./pages/Contact";
-import MenuMobile from "./utils/MenuMobile";
+import Table from "./pages/Table";
 
 function App() {
 
@@ -11,7 +11,6 @@ function App() {
     { path: '/home', element: <Home /> },
     { path: '/product', element: <Product /> },
     { path: '/contact', element: <Contact /> },
-    { path: '/menu', element: <MenuMobile /> }
     
   ])
   return (

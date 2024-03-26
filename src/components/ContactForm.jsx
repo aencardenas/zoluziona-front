@@ -34,7 +34,7 @@ export default function Form() {
           ></textarea>
         </div>
 
-        <button type="submit" className="bg-green-34 text-white font-semibold lg:text-xl w-32 h-11 lg:w-40 lg:h-14 rounded-md text-base self-center shadow-xl mt-3">Enviar</button>
+        <button type="submit" className="bg-green-34 text-white font-semibold lg:text-xl w-32 h-11 lg:w-40 lg:h-14 rounded-md text-base self-center shadow-xl mt-3 hover:bg-green-28">Enviar</button>
       </form>
     </>
   );

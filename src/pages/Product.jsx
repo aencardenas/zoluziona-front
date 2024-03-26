@@ -2,9 +2,11 @@ import Header from "../utils/Header";
 import Line from "../utils/Line";
 import ProductInfo from "../components/ProductInfo";
 import ProductButton from "../utils/ProductButton";
-import ProductEspecifications from "../components/ProductEspecifications";
+/* import ProductEspecifications from "../components/ProductEspecifications"; */
+import TableElectricalEsp from "../utils/TableElectricalEspecifications";
 import Footer from "../utils/Footer";
 import batteryImage from "../assets/images/battery.png";
+
 
 export default function Product() {
   return (
@@ -48,7 +50,8 @@ export default function Product() {
           ESPECIFICACIONES
         </h2>
 
-        <ProductEspecifications />
+        {/* <ProductEspecifications /> */}
+        <TableElectricalEsp />
 
         <Line />
         <div className="flex flex-col gap-3 max-w-[450px]">
