@@ -1,6 +1,16 @@
+import { useState } from "react";
+import MenuMobile from "./MenuMobile";
 import logo from "../assets/images/header-logo.png";
 
 export default function Header() {
+
+  const [showMenu, setShowMenu] = useState(false);	
+
+  const handleShowMenu = () => {
+    setShowMenu(!showMenu);
+    document.body.style.overflow = showMenu ? '' : 'hidden';
+  };
+
   return (
     <>
       <div className="bg-blue-85 flex justify-between items-center h-[60px]">
@@ -13,6 +23,7 @@ export default function Header() {
           height="24"
           fill="none"
           viewBox="0 0 24 24"
+          onClick={handleShowMenu}
         >
           <path
             stroke="currentColor"
@@ -30,6 +41,7 @@ export default function Header() {
           </ul>
         </div>
       </div>
+      {showMenu && <MenuMobile onClose={handleShowMenu} />}
     </>
   );
 }

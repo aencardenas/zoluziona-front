@@ -1,7 +1,7 @@
-export default function MenuMobile() {
+export default function MenuMobile({ onClose }) {
   return (
     <>
-      <div className="h-screen bg-blue-85 flex flex-col">
+      <div className="fixed top-0 left-0 h-screen w-full bg-blue-85 flex flex-col z-50">
         <svg
           className="w-[40px] h-[40px] text-white self-end mt-3 mr-3"
           aria-hidden="true"
@@ -10,6 +10,7 @@ export default function MenuMobile() {
           height="24"
           fill="none"
           viewBox="0 0 24 24"
+          onClick={onClose}
         >
           <path
             stroke="currentColor"

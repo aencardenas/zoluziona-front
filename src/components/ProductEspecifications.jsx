@@ -78,7 +78,7 @@ const TableElectricalEsp = () => {
           <div key={i}>
             <div className="flex bg-green-28 text-white p-[5px] items-center cursor-pointer" onClick={() => toggleTable(item.id)}>
               <svg
-                className="w-6 h-6 text-blue-70"
+                className={`w-6 h-6 text-blue-700 transform transition-transform ${openTables[item.id] ? 'rotate-90' : ''}`}
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
