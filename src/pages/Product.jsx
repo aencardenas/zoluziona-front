@@ -20,7 +20,7 @@ export default function Product() {
             className="w-[240px] self-center lg:w-[400px]"
           />
           <div>
-            <h2 className="text-2xl font-semibold text-blue-62 lg:text-3xl">LiFePO4</h2>
+            <h2 className="text-2xl font-semibold text-blue-62 lg:text-3xl mb-3">LiFePO4</h2>
             <p className="text-sm lg:text-xl">
               Las baterías de fosfato de hierro y litio (LiFePO4) destacan por
               su mayor potencia de salida, carga rápida, peso reducido y vida
@@ -37,7 +37,7 @@ export default function Product() {
         <Line />
 
         <div>
-          <h2 className="text-2xl font-semibold text-blue-62 lg:text-3xl mb-2">
+          <h2 className="text-2xl font-semibold text-blue-62 lg:text-3xl mb-5">
             FICHA TECNICA
           </h2>
           <ProductButton text="Desgargar ficha" />
@@ -45,7 +45,7 @@ export default function Product() {
 
         <Line />
 
-        <h2 className="text-2xl font-semibold text-blue-62 lg:text-3xl">
+        <h2 className="text-2xl font-semibold text-blue-62 lg:text-3xl mb-5">
           ESPECIFICACIONES
         </h2>
 
@@ -53,7 +53,7 @@ export default function Product() {
 
         <Line />
         <div className="flex flex-col gap-3 max-w-[450px]">
-          <h2 className="text-2xl font-semibold text-blue-62 lg:text-3xl">PRECIOS</h2>
+          <h2 className="text-2xl font-semibold text-blue-62 lg:text-3xl mb-2">PRECIOS</h2>
           <ProductButton text="Cotiza con nosotros" />
           <ProductButton text="Condiciones de pago" />
         </div>
