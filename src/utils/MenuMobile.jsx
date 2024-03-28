@@ -1,7 +1,7 @@
 export default function MenuMobile({ onClose }) {
   return (
     <>
-      <div className="fixed top-0 left-0 h-screen w-full bg-blue-85 flex flex-col z-50">
+      <div className="fixed top-0 left-0 h-screen w-3/4 lg:w-1/2 bg-blue-85 flex flex-col z-50">
         <svg
           className="w-[40px] h-[40px] text-white self-end mt-3 mr-3"
           aria-hidden="true"

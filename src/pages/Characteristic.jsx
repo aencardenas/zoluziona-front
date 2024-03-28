@@ -7,17 +7,17 @@ import { useMediaQuery } from "@react-hook/media-query";
 
 export default function Characteristic() {
 
-    const lg = useMediaQuery("(min-width: 1024px");
+    const md = useMediaQuery("(min-width: 768px");
     return (
 
         <>
             <div className="bg-green-28 min-h-screen flex flex-col">
                 <Header />
-                <div className="mt-4 mx-4 flex flex-col gap-8 mb-4 lg:mt-12">
+                <div className="my-4 mx-4 flex flex-col gap-8 md:mb-12 md:mt-12">
                     {data.characteristics.map((characteristic, index) => (
                         index < data.characteristics.length - 2 && (
-                            lg ? (
-                                <div className="mx-6">
+                            md ? (
+                                <div key={characteristic.descriptions} className="max-w-[1024px] mx-auto w-full">
                                     <CharacteristicCardDesktop key={index} characteristic={characteristic} />
                                 </div>
                             ) : (

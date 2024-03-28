@@ -4,7 +4,7 @@ import logo from "../assets/images/header-logo.png";
 
 export default function Header() {
 
-  const [showMenu, setShowMenu] = useState(false);	
+  const [showMenu, setShowMenu] = useState(false);
 
   const handleShowMenu = () => {
     setShowMenu(!showMenu);
@@ -41,7 +41,7 @@ export default function Header() {
           </ul>
         </div>
       </div>
-      {showMenu && <MenuMobile onClose={handleShowMenu} />}
+      {showMenu && <MenuMobile onClose={handleShowMenu} showMenu={showMenu} />}
     </>
   );
 }
