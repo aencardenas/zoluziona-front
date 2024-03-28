@@ -21,7 +21,7 @@ export default function Characteristic() {
                                     <CharacteristicCardDesktop key={index} characteristic={characteristic} />
                                 </div>
                             ) : (
-                                <CharacteristicCard key={index} characteristic={characteristic} />
+                                <CharacteristicCard key={characteristic.name} characteristic={characteristic} />
                             )
                         )
                     ))}
