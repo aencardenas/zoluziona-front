@@ -1,4 +1,3 @@
-import { useState } from "react";
 import ambient from "../assets/icons/ambiental.png";
 import fastCharge from "../assets/icons/carga-rapida.png";
 import lifeCycle from "../assets/icons/ciclo-vida.png";
@@ -7,14 +6,8 @@ import security from "../assets/icons/seguridad.png";
 import discharge from "../assets/icons/tasa-descarga.png";
 import temperature from "../assets/icons/temperatura.png";
 
+export default function CharacteristicCardDesktop({ characteristic }) {
 
-export default function CharacteristicCard({ characteristic }) {
-
-    const [showList, setShowList] = useState(false);
-
-    const toggleList = () => {
-        setShowList(!showList)
-    }
 
     const { name, descriptions } = characteristic
 
@@ -31,23 +24,22 @@ export default function CharacteristicCard({ characteristic }) {
     }
 
     return (
+
         <>
-            <div className="flex flex-col bg-white px-8 py-2 rounded-[10px]">
-                <div className="flex justify-start items-center">
-                    <svg className="w-10 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" onClick={toggleList}>
-                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 5 7 7-7 7" />
-                    </svg>
-                    <img src={images[name]} className="w-16" alt={name}></img>
-                    <span className="font-bold text-xl w-full">{name}</span>
+            <div className="bg-white rounded-[10px]">
+                <div className="bg-blue-85 text-center p-4 rounded-[10px]">
+                    <span className="font-bold text-2xl text-white">{name}</span>
                 </div>
-                {showList && (
-                    <ul className="flex flex-col gap-y-4 list-disc text-justify text-">
+                <div className="flex items-center px-8 py-10">
+                    <img src={images[name]} className="w-52"/>
+                    <ul className="flex flex-col gap-y-2 list-disc text-justify w-full text-[22px]">
                         {descriptions.map((description, index) => (
                             <li key={index}>{description}</li>
                         ))}
                     </ul>
-                )}
+                </div>
             </div>
+
         </>
 
     );
