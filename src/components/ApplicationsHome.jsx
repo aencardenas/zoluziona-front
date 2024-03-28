@@ -33,7 +33,7 @@ export default function ApplicationsHome() {
                             <img
                                 src={application.image}
                                 alt={application.text}
-                                className="w-16 lg:w-36"
+                                className="w-14 lg:w-36"
                             />
                             <span className="lg:text-xl">{application.text}</span>
                         </div>

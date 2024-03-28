@@ -31,7 +31,7 @@ export default function CharacteristicsHome() {
                 <div className="xs:flex xs:justify-center md:flex md:justify-center">
                     <ul className="pb-4 xs:columns-2 md:columns-2 lg:columns-2">
                         {data.characteristics.map((characteristic, index) => (
-                            <li key={index} className="flex items-center lg:mr-8">
+                            <li key={index} className="flex items-center">
                                 <img
                                     src={images[characteristic.name]}
                                     alt={characteristic.name}

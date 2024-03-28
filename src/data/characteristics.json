@@ -65,10 +65,16 @@
     },
     {
       "name": "Diseño liviano",
+      "descriptions" :[
+        "Peso más ligero, aproximadamente el 40% y el 50% del peso de una batería de plomo ácido comparable"
+      ],
       "img": "ambiental.png"
     },
     {
       "name": "Cero mantenimiento",
+      "descriptions":[
+        
+      ],
       "img": "seguridad.png"
     }
   ]
