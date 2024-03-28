@@ -76,9 +76,9 @@ const TableElectricalEsp = () => {
       <div className="flex flex-col gap-5">
         {especifictions.map((item, i) => (
           <div key={i}>
-            <div className="flex bg-green-28 text-white p-[5px] items-center cursor-pointer" onClick={() => toggleTable(item.id)}>
+            <div className="flex bg-green-28 text-white hover:text-blue-70 p-[5px] items-center cursor-pointer" onClick={() => toggleTable(item.id)}>
               <svg
-                className={`w-6 h-6 text-blue-700 transform transition-transform ${openTables[item.id] ? 'rotate-90' : ''}`}
+                className={`w-6 h-6 text-blue-70  transform transition-transform ${openTables[item.id] ? 'rotate-90' : ''}`}
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
