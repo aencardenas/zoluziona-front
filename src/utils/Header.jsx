@@ -34,10 +34,10 @@ export default function Header() {
         </svg>
         <div className="hidden lg:block mr-7">
           <ul className="flex text-white gap-7 font-semibold text-lg">
-            <li className="cursor-pointer">Inicio</li>
-            <li className="cursor-pointer">Producto</li>
-            <li className="cursor-pointer">Características</li>
-            <li className="cursor-pointer">Contacto</li>
+            <li className="cursor-pointer hover:text-green-34">Inicio</li>
+            <li className="cursor-pointer hover:text-green-34">Producto</li>
+            <li className="cursor-pointer hover:text-green-34">Características</li>
+            <li className="cursor-pointer hover:text-green-34">Contacto</li>
           </ul>
         </div>
       </div>
