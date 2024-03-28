@@ -13,7 +13,7 @@ export default function CharacteristicsHome() {
     const images = {
         "Alta Seguridad": security,
         "Ciclo de vida prolongado": lifeCycle,
-        "Capacidade de carga rápida": fastCharge,
+        "Capacidad de carga rápida": fastCharge,
         "Alta densidad de energía": energyDensity,
         "Baja tasa de autodescarga": discharge,
         "Amplio rango de temperatura": temperature,
