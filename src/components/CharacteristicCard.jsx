@@ -32,7 +32,7 @@ export default function CharacteristicCard({ characteristic }) {
 
     return (
         <>
-            <div className="flex flex-col bg-white px-8 py-2 rounded-[10px]">
+            <div className="flex flex-col bg-white px-8 py-2 rounded-[10px]" onClick={toggleList}>
                 <div className="flex justify-start items-center">
                     <svg
                         className={`w-10 h-6 text-blue-85 absolute left-6 transform transition-transform ${showList ? 'rotate-90' : ''}`}
@@ -42,7 +42,6 @@ export default function CharacteristicCard({ characteristic }) {
                         height="24"
                         fill="currentColor"
                         viewBox="0 0 24 24"
-                        onClick={toggleList}
                     >
                         <path
                             fillRule="evenodd"
