@@ -8,7 +8,6 @@ export default function Header() {
 
   const handleShowMenu = () => {
     setShowMenu(!showMenu);
-    document.body.style.overflow = showMenu ? '' : 'hidden';
   };
 
   return (
@@ -16,7 +15,7 @@ export default function Header() {
       <div className="bg-blue-85 flex justify-between items-center h-[60px]">
         <img src={logo} alt="header" className="w-[148px]" />
         <svg
-          className="w-[60px] h-[60px] text-white pr-4 lg:hidden"
+          className="w-[60px] h-[60px] text-white pr-4 lg:hidden hover:cursor-pointer"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -41,7 +40,10 @@ export default function Header() {
           </ul>
         </div>
       </div>
-      {showMenu && <MenuMobile onClose={handleShowMenu} showMenu={showMenu} />}
+      <div className={`fixed top-0 right-0 h-screen w-[330px] rounded-xl bg-green-28 z-50 transform transition-transform duration-300 ease-in-out ${showMenu ? 'translate-x-0' : 'translate-x-full'}`}>
+        {showMenu && <MenuMobile onClose={handleShowMenu} />}
+      </div>
+
     </>
   );
 }
