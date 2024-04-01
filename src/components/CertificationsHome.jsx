@@ -1,10 +1,10 @@
-import ce from "../assets/images/ce-mark.png";
-import iso14001 from "../assets/images/iso-14001.png";
-import iso from "../assets/images/iso.png";
-import ohsas from "../assets/images/ohsas-iso.png";
-import ru from "../assets/images/RU.png";
-import transport from "../assets/images/transport-safety.jpeg";
-import usLogo from "../assets/images/uslogo.png";
+import ce from "../assets/images/ce-mark.webp";
+import iso14001 from "../assets/images/iso-14001.webp";
+import iso from "../assets/images/iso.webp";
+import ohsas from "../assets/images/ohsas-iso.webp";
+import ru from "../assets/images/RU.webp";
+import transport from "../assets/images/transport-safety.webp";
+import usLogo from "../assets/images/uslogo.webp";
 import warranty from "../assets/images/warranty.webp";
 
 export default function CertificationsHome() {
