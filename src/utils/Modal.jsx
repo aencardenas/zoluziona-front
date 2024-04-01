@@ -1,37 +1,28 @@
+import { IoClose } from "react-icons/io5";
+
 export default function Modal({ children, open, onClose, title }) {
   return (
     <>
-      <article
-        className={`fixed z-50 top-0 p-5 left-0 w-full min-h-screen flex justify-center items-center bg-black bg-opacity-75 ${
-          open ? "" : "hidden"
+      <div
+        onClick={onClose}
+        className={`fixed inset-0 flex  justify-center items-center transition-colors px-5 ${
+          open ? "visible bg-black/20" : "invisible"
         }`}
       >
-        <div className="bg-white flex flex-col justify-center items-center rounded-md overflow-x-auto">
-          <div className="bg-blue-85 w-full rounded-t-md flex justify-between items-center p-1 text-white ">
-            <h3 className="flex-grow text-center font-semibold text-lg" id="modalTitle">{title}</h3>
-            <svg
-              className="w-6 h-6 text-white cursor-pointer"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-              onClick={onClose}
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="m15 9-6 6m0-6 6 6m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-              />
-            </svg>
+        <div
+          onClick={(e) => e.stopPropagation()}
+          className={`bg-white rounded-md shadow transition-all ${
+            open ? "scale-100 opacity-100" : "scale-125 opacity-0"
+          }`}
+        >
+          <div className="bg-blue-85 flex justify-between rounded-t-md">
+            <h2 className="lg:text-2xl text-white p-3">{title}</h2>
+            <button onClick={onClose} className="p-1"><IoClose className="text-3xl text-white" /></button>
           </div>
-
+          
           {children}
         </div>
-      </article>
+      </div>
     </>
   );
 }

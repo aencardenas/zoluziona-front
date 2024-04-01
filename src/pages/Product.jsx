@@ -74,9 +74,10 @@ export default function Product() {
           <ProductButton text="Cotiza con nosotros" onClick={handleOpen} />
           <ProductButton text="Condiciones de pago" onClick={handleOpen2} />
         </div>
+
         <Modal open={open} onClose={handleOpen}>
           <div className="flex flex-col p-7 gap-2">
-            <div className="flex gap-10 font-semibold">
+            <div className="flex gap-10 font-semibold lg:text-xl">
               <div>
                 <p>1 bateria</p>
                 <p>2 baterias</p>

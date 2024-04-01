@@ -54,31 +54,38 @@ const TableElectricalEsp = () => {
   const complianceTable = useGenerateTable(data.complianceTable, columns);
 
   const especifictions = [
-    {id:"electricas", especification: "Eléctricas", table: electricalTable },
-    {id:"mecanicas", especification: "Mécanicas", table: mechanicalTable },
-    {id:"carga", especification: "Carga", table: chargeTable },
-    {id:"descarga", especification: "Descarga", table: dischargeTable },
-    {id:"temperatura", especification: "Temperatura", table: temperatureTable },
-    {id:"legales", especification: "Legales", table: complianceTable },
+    { id: "electricas", especification: "Eléctricas", table: electricalTable },
+    { id: "mecanicas", especification: "Mécanicas", table: mechanicalTable },
+    { id: "carga", especification: "Carga", table: chargeTable },
+    { id: "descarga", especification: "Descarga", table: dischargeTable },
+    { id: "temperatura", especification: "Temperatura", table: temperatureTable },
+    { id: "legales", especification: "Legales", table: complianceTable },
   ];
 
-  const [openTables, setOpenTables] = useState(especifictions.reduce((acc, curr) => {
-    acc[curr.id] = false;
-    return acc;
-  }));
+  const [openTables, setOpenTables] = useState(
+    especifictions.reduce((acc, curr) => {
+      acc[curr.id] = false;
+      return acc;
+    })
+  );
 
   const toggleTable = (id) => {
     setOpenTables((prev) => ({ ...prev, [id]: !prev[id] }));
-  }
+  };
 
   return (
     <>
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 h-auto">
         {especifictions.map((item, i) => (
           <div key={i}>
-            <div className="flex bg-green-28 text-white hover:text-blue-70 p-[5px] items-center cursor-pointer" onClick={() => toggleTable(item.id)}>
+            <div
+              className="flex bg-green-28 text-white lg:hover:text-blue-70 p-[5px] items-center cursor-pointer"
+              onClick={() => toggleTable(item.id)}
+            >
               <svg
-                className={`w-6 h-6 text-blue-70  transform transition-transform ${openTables[item.id] ? 'rotate-90' : ''}`}
+                className={`w-6 h-6 text-blue-70  transform transition-transform ${
+                  openTables[item.id] ? "rotate-90" : ""
+                }`}
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -95,7 +102,10 @@ const TableElectricalEsp = () => {
 
               <p className="font-medium lg:text-lg">{item.especification}</p>
             </div>
-            <div className={`${openTables[item.id] ? '' : 'hidden'}`}>{item.table()}</div>
+
+            <div className={`${openTables[item.id] ? "" : "hidden"}`}>
+              {item.table()}
+            </div>
           </div>
         ))}
       </div>
