@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function MenuMobile({ onClose }) {
 
   return (
@@ -27,25 +28,33 @@ export default function MenuMobile({ onClose }) {
             <svg className="w-6 h-6 hover:text-blue-85" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
               <path fillRule="evenodd" d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z" clipRule="evenodd" />
             </svg>
-            <p>Inicio</p>
+            <Link to='/home'>
+              <p>Inicio</p>
+            </Link>
           </div>
           <div className="flex items-center gap-x-4 hover:cursor-pointer hover:text-blue-85 w-fit">
             <svg className="w-6 h-6 hover:text-blue-85" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
               <path d="M18.045 3.007 12.31 3a1.965 1.965 0 0 0-1.4.585l-7.33 7.394a2 2 0 0 0 0 2.805l6.573 6.631a1.957 1.957 0 0 0 1.4.585 1.965 1.965 0 0 0 1.4-.585l7.409-7.477A2 2 0 0 0 21 11.479v-5.5a2.972 2.972 0 0 0-2.955-2.972Zm-2.452 6.438a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
             </svg>
-            <p>Producto</p>
+            <Link to='/product'>
+              <p>Producto</p>
+            </Link>
           </div>
           <div className="flex items-center gap-x-4 hover:cursor-pointer hover:text-blue-85 w-fit">
             <svg className="w-6 h-6 hover:text-blue-85" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
               <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M9 8h10M9 12h10M9 16h10M4.99 8H5m-.02 4h.01m0 4H5" />
             </svg>
-            <p>Características</p>
+            <Link to='/characteristic'>
+              <p>Características</p>
+            </Link>
           </div>
           <div className="flex items-center gap-x-4 hover:cursor-pointer hover:text-blue-85 w-fit">
             <svg className="w-6 h-6 hover:text-blue-85" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
               <path d="M7.978 4a2.553 2.553 0 0 0-1.926.877C4.233 6.7 3.699 8.751 4.153 10.814c.44 1.995 1.778 3.893 3.456 5.572 1.68 1.679 3.577 3.018 5.57 3.459 2.062.456 4.115-.073 5.94-1.885a2.556 2.556 0 0 0 .001-3.861l-1.21-1.21a2.689 2.689 0 0 0-3.802 0l-.617.618a.806.806 0 0 1-1.14 0l-1.854-1.855a.807.807 0 0 1 0-1.14l.618-.62a2.692 2.692 0 0 0 0-3.803l-1.21-1.211A2.555 2.555 0 0 0 7.978 4Z" />
             </svg>
-            <p>Contacto</p>
+            <Link to='/contact'>
+              <p>Contacto</p>
+            </Link>
           </div>
 
         </div>

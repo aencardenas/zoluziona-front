@@ -1,4 +1,5 @@
 import logo from "../assets/images/footer-logo.png"
+import { Link } from "react-router-dom";
 
 export default function Footer() {
 
@@ -7,7 +8,7 @@ export default function Footer() {
             <footer className="bg-black-100 px-2 py-3 mt-auto">
                 <div className="flex justify-between items-center">
                     <div>
-                        <p className="flex flex-col text-white text-center text-sm ml-2">Necesitas ayuda? <strong>Contáctanos</strong></p>
+                        <p className="flex flex-col text-white text-center text-sm ml-2">Necesitas ayuda? <strong><Link to="/contact">Contáctanos</Link></strong></p>
                     </div>
                     <div className="flex items-center">
                         <img

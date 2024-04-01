@@ -7,6 +7,7 @@ import security from "../assets/icons/seguridad.png";
 import discharge from "../assets/icons/tasa-descarga.png";
 import temperature from "../assets/icons/temperatura.png";
 import HomeButton from "../utils/HomeButton";
+import { Link } from "react-router-dom";
 
 export default function CharacteristicsHome() {
 
@@ -43,7 +44,9 @@ export default function CharacteristicsHome() {
                     </ul>
                 </div>
                 <div className="flex justify-center">
-                    <HomeButton text="Ver más" />
+                    <Link to="/characteristic">
+                        <HomeButton text="Ver más" />
+                    </Link>
                 </div>
             </div>
         </>

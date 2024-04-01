@@ -1,6 +1,7 @@
 import { useState } from "react";
 import MenuMobile from "./MenuMobile";
 import logo from "../assets/images/header-logo.png";
+import { Link } from "react-router-dom";
 
 export default function Header() {
 
@@ -13,7 +14,9 @@ export default function Header() {
   return (
     <>
       <div className="bg-blue-85 flex justify-between items-center h-[60px]">
-        <img src={logo} alt="header" className="w-[148px]" />
+        <Link to="/home">
+          <img src={logo} alt="header" className="w-[148px]" />
+        </Link>
         <svg
           className="w-[60px] h-[60px] text-white pr-4 lg:hidden hover:cursor-pointer"
           aria-hidden="true"
@@ -33,10 +36,10 @@ export default function Header() {
         </svg>
         <div className="hidden lg:block mr-7">
           <ul className="flex text-white gap-7 font-semibold text-lg">
-            <li className="cursor-pointer hover:text-green-34">Inicio</li>
-            <li className="cursor-pointer hover:text-green-34">Producto</li>
-            <li className="cursor-pointer hover:text-green-34">Características</li>
-            <li className="cursor-pointer hover:text-green-34">Contacto</li>
+            <li className="cursor-pointer hover:text-green-34"><Link to="/home">Inicio</Link></li>
+            <li className="cursor-pointer hover:text-green-34"><Link to="/product">Producto</Link></li>
+            <li className="cursor-pointer hover:text-green-34"><Link to="/characteristic">Características</Link></li>
+            <li className="cursor-pointer hover:text-green-34"><Link to="/contact">Contacto</Link></li>
           </ul>
         </div>
       </div>
