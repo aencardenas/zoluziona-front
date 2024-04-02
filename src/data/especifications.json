@@ -1,158 +1,158 @@
 {
     "electricalTable": [
         {
-            "name": "Nominal Voltage",
+            "name": "Nominal Voltage / Voltaje Nominal",
             "value": "51.2V"
         },
         {
-            "name": "Nominal Capacity",
+            "name": "Nominal Capacity / Capacidad Nominal",
             "value": "30Ah"
         },
         {
-            "name": "Capacity @ 25A",
+            "name": "Capacity @ 25A / Capacidad @ 25A",
             "value": "72 min"
         },
         {
-            "name": "Resistance",
+            "name": "Resistance / Resistencia",
             "value": "≤30 mΩ @50% SOC"
         },
         {
-            "name": "Efficiency",
+            "name": "Efficiency / Eficiencia",
             "value": "99%"
         },
         {
-            "name": "Self Discharge",
+            "name": "Self Discharge / Tasa de Autodescarga",
             "value": "3-5% when disconnected"
         },
         {
-            "name": "Maximum Modules in Parallel",
+            "name": "Maximum Modules in Parallel / Módulos Máximos en Paralelo",
             "value": "6-8"
         }
     ],
     "machanicalTable": [
         {
-            "name": "Dimensions (L x W x H)",
+            "name": "Dimensions (L x W x H) / Dimensiones (L x A x H)",
             "value": "10.2 x 7 x 9.75 in"
         },
         {
-            "name": "Weight",
+            "name": "Weight / Peso",
             "value": "38 lbs"
         },
         {
-            "name": "Terminal Type",
+            "name": "Terminal Type / Tipo de Terminal",
             "value": "M8"
         },
         {
-            "name": "Terminal Material",
-            "value": "Brass"
+            "name": "Terminal Material / Material de Terminal",
+            "value": "Brass / Latón"
         },
         {
-            "name": "Case Material",
+            "name": "Case Material / Material de la Caja",
             "value": "ABS"
         },
         {
-            "name": "Enclosure Protection",
+            "name": "Enclosure Protection / Protección de la Carcasa",
             "value": "IP54"
         },
         {
-            "name": "Cell Type - Chemistry",
-            "value": "Cylindrical - LiFePO4"
+            "name": "Cell Type - Chemistry / Tipo de Celda - Química",
+            "value": "Cylindrical / Cilíndrica - LiFePO4"
         }
     ],
     "temperatureTable": [
         {
-            "name": "Discharge Temperature",
+            "name": "Discharge Temperature / Temperatura de Descarga",
             "value": "-4°F to 140°F (-20°C to 60°C)"
         },
         {
-            "name": "Charge Temperature",
+            "name": "Charge Temperature / Temperatura de Carga",
             "value": "32°F to 131°F (0°C to 60°C)"
         },
         {
-            "name": "Storage Temperature",
+            "name": "Storage Temperature / Temperatura de Almacenamiento",
             "value": "-32°F to 113°F (0°C to 45°C)"
         },
         {
-            "name": "BMS High Temperature Cut Off",
+            "name": "BMS High Temperature Cut Off / Corte de Temperatura Alta del BMS",
             "value": "176°F (80 °C)"
         },
         {
-            "name": "Reconnect Temperature",
+            "name": "Reconnect Temperature / Temperatura de Reconexión",
             "value": "122°F (50 °C) ~ 140°F (60 °C)"
         }
     ],
     "dischargeTable": [
         {
-            "name": "Maximum Continuous Discharge Current",
+            "name": "Maximum Continuous Discharge Current / Corriente de Descarga Continua Máxima",
             "value": "30A"
         },
         {
-            "name": "Peak Discharge Current",
+            "name": "Peak Discharge Current / Corriente de Descarga Pico",
             "value": "60A (10s)"
         },
         {
-            "name": "BMS Discharge Current Cut-Off",
+            "name": "BMS Discharge Current Cut-Off / Corte de Corriente de Descarga del BMS",
             "value": "≤105A±2A ; ≤1s"
         },
         {
-            "name": "Recomended Low Voltage Disconnect",
+            "name": "Recomended Low Voltage Disconnect / Desconexión de Baja Tensión Recomendada",
             "value": "40V (2.5V)" 
         },
         {
-            "name": "BMS Discharge Voltage Cut-Off",
+            "name": "BMS Discharge Voltage Cut-Off / Corte de Tensión de Descarga del BMS",
             "value": "32V (2.0V±0.08 vpc)"
         },
         {
-            "name": "Reconnect Voltage",
+            "name": "Reconnect Voltage / Voltaje de Reconexión",
             "value": "36.8V (2.3V±0.1 vpc)"
         },
         {
-            "name": "Short Circuit Protection",
+            "name": "Short Circuit Protection / Protección de Cortocircuito",
             "value": "200-500ms"
         }
     ],
     "chargeTable": [
         {
-            "name": "Recommended Charge Current",
+            "name": "Recommended Charge Current / Corriente de Carga Recomendada",
             "value": "7.5A - 15A"
         },
         {
-            "name": "Maximum Charge Current",
+            "name": "Maximum Charge Current / Corriente de Carga Máxima",
             "value": "30A"
         },
         {
-            "name": "Charge Current 14° to 32°F (-10 to 0°C)",
+            "name": "Charge Current 14° to 32°F (-10 to 0°C) / Corriente de Carga 14° a 32°F (-10 a 0°C)",
             "value": "≤0.1°C"
         },
         {
-            "name": "Change Current -4° to 14°F (-20 to -10°C)",
+            "name": "Change Current -4° to 14°F (-20 to -10°C) / Corriente de Carga -4° a 14°F (-20 a -10°C)",
             "value": "≤0.05°C"
         },
         {
-            "name": "Recommended Charge Voltage",
+            "name": "Recommended Charge Voltage / Voltaje de Carga Recomendado",
             "value": "40V - 59.2V"
         },
         {
-            "name": "BMS Charge Voltage Cut-Off",
+            "name": "BMS Charge Voltage Cut-Off / Corte de Tensión de Carga del BMS",
             "value": "62.4V (3.9V±0.05 vpc)"
         },
         {
-            "name": "Recconect Voltage",
+            "name": "Recconect Voltage / Voltaje de Reconexión",
             "value": "61.6V (3.85V±0.05 vpc)"
         },
         {
-            "name": "Balancing Voltage",
+            "name": "Balancing Voltage / Voltaje de Balanceo",
             "value": "56.8V (3.55V±0.025 vpc)"
         }
     ],
     "complianceTable": [
         {
-            "name": "Certifications",
+            "name": "Certifications / Certificaciones",
             "value": "UN38.3 (Battery), UL1642, IEC62133 (Cells)"
         },
         {
-            "name": "Shipping clasisfication",
-            "value": "UN3480 - Class 9"
+            "name": "Shipping clasisfication / Clasificación de envío",
+            "value": "UN 3480 - Class 9"
         }
     ]
 }
