@@ -20,7 +20,7 @@ const useGenerateTable = (tableData, columns) => {
           {table.getRowModel().rows.map((row) => (
             <tr key={row.id}>
               {row.getVisibleCells().map((cell) => (
-                <td key={cell.id} className="p-2 border text-sm lg:text-lg">
+                <td key={cell.id} className="p-2 border text-xs lg:text-lg w-1/2 lg:w-auto">
                   {flexRender(cell.column.columnDef.cell, cell.getContext())}
                 </td>
               ))}
