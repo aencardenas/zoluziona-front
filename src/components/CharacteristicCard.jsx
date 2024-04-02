@@ -1,11 +1,11 @@
 import { useState } from "react";
-import ambient from "../assets/icons/ambiental.png";
-import fastCharge from "../assets/icons/carga-rapida.png";
-import lifeCycle from "../assets/icons/ciclo-vida.png";
-import energyDensity from "../assets/icons/densidad-energia.png";
-import security from "../assets/icons/seguridad.png";
-import discharge from "../assets/icons/tasa-descarga.png";
-import temperature from "../assets/icons/temperatura.png";
+import ambient from "../assets/icons/ambiental.webp";
+import fastCharge from "../assets/icons/carga-rapida.webp";
+import lifeCycle from "../assets/icons/ciclo-vida.webp";
+import energyDensity from "../assets/icons/densidad-energia.webp";
+import security from "../assets/icons/seguridad.webp";
+import discharge from "../assets/icons/tasa-descarga.webp";
+import temperature from "../assets/icons/temperatura.webp";
 
 
 export default function CharacteristicCard({ characteristic }) {

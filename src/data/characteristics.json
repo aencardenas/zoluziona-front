@@ -6,7 +6,7 @@
         "Ofrecen una mayor estabilidad térmica y una estabilidad inherente, lo que las hace altamente seguras.",
         "Tienen una resistencia a la sobrecarga que minimiza el riesgo de daños o fallos debido a voltajes excesivos."
       ],
-      "img": "seguridad.png"
+      "img": "seguridad.webp"
     },
     {
       "name": "Ciclo de vida prolongado",
@@ -17,7 +17,7 @@
         "Estabilidad química inherente garantiza una degradación mínima con el tiempo, a diferencia de otras baterías de iones de litio y plomo ácido.",
         "Ofrecen una fuente de energía confiable y duradera a lo largo del tiempo."
       ],
-      "img": "ciclo-vida.png"
+      "img": "ciclo-vida.webp"
     },
     {
       "name": "Capacidad de carga rápida",
@@ -26,7 +26,7 @@
         "Baja resistencia interna, lo que les permite manejar corrientes de carga más altas sin acumular o degradar calor de manera significativa.",
         "Garantiza tiempos de inactividad mínimos y una productividad máxima para una variedad de aplicaciones."
       ],
-      "img": "carga-rapida.png"
+      "img": "carga-rapida.webp"
     },
     {
       "name": "Alta densidad de energía",
@@ -36,14 +36,14 @@
         "El diseño compacto y liviano las hace ideales para situaciones donde el espacio y el peso son críticos.",
         "La alta densidad de energía contribuye a mejorar la eficiencia general y reducir el consumo de energía, proporcionando un rendimiento optimizado y una mayor duración de la batería."
       ],
-      "img": "densidad-energia.png"
+      "img": "densidad-energia.webp"
     },
     {
       "name": "Baja tasa de autodescarga",
       "descriptions": [
         "Nuestras baterías tienen una baja tasa de autodescarga, exhiben una pérdida de energía mínima con el tiempo y reduce la necesidad de recargas o mantenimiento frecuentes."
       ],
-      "img": "tasa-descarga.png"
+      "img": "tasa-descarga.webp"
     },
     {
       "name": "Amplio rango de temperatura",
@@ -52,7 +52,7 @@
         "Ideales para aplicaciones en climas cálidos o bajo cargas térmicas intensas.",
         "Rendimiento superior a temperaturas bajas en comparación con otras tecnologías químicas de baterías."
       ],
-      "img": "temperatura.png"
+      "img": "temperatura.webp"
     },
     {
       "name": "Ecofriendly",
@@ -61,21 +61,21 @@
         "Libres de materiales tóxicos como cobalto y plomo, lo que facilita su reciclaje y contribuye a una solución energética más sostenible.",
         "La ausencia de materiales nocivos reduce el impacto ambiental, desde la producción hasta la eliminación, garantizando prácticas más seguras y minimizando el riesgo de contaminación del suelo y el agua."
       ],
-      "img": "ambiental.png"
+      "img": "ambiental.webp"
     },
     {
       "name": "Diseño liviano",
       "descriptions" :[
         "Peso más ligero, aproximadamente el 40% y el 50% del peso de una batería de plomo ácido comparable"
       ],
-      "img": "ambiental.png"
+      "img": "ambiental.webp"
     },
     {
       "name": "Cero mantenimiento",
       "descriptions":[
         
       ],
-      "img": "seguridad.png"
+      "img": "seguridad.webp"
     }
   ]
 }
