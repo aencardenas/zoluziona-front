@@ -4,7 +4,7 @@ import {
   flexRender,
 } from "@tanstack/react-table";
 import data from "../data/especifications.json";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const useGenerateTable = (tableData, columns) => {
   const table = useReactTable({
@@ -20,7 +20,10 @@ const useGenerateTable = (tableData, columns) => {
           {table.getRowModel().rows.map((row) => (
             <tr key={row.id}>
               {row.getVisibleCells().map((cell) => (
-                <td key={cell.id} className="p-2 border text-xs lg:text-lg w-1/2 lg:w-auto">
+                <td
+                  key={cell.id}
+                  className="p-2 border text-xs lg:text-lg w-1/2 lg:w-auto"
+                >
                   {flexRender(cell.column.columnDef.cell, cell.getContext())}
                 </td>
               ))}
@@ -58,23 +61,54 @@ const TableElectricalEsp = () => {
     { id: "mecanicas", especification: "Mécanicas", table: mechanicalTable },
     { id: "carga", especification: "Carga", table: chargeTable },
     { id: "descarga", especification: "Descarga", table: dischargeTable },
-    { id: "temperatura", especification: "Temperatura", table: temperatureTable },
+    {
+      id: "temperatura",
+      especification: "Temperatura",
+      table: temperatureTable,
+    },
     { id: "legales", especification: "Legales", table: complianceTable },
   ];
 
-  const [openTables, setOpenTables] = useState(
-    especifictions.reduce((acc, curr) => {
-      acc[curr.id] = false;
-      return acc;
-    })
-  );
+  const [openTables, setOpenTables] = useState({});
+
+  useEffect(() => {
+    const initialOpenTables = {};
+    especifictions.forEach((spec) => {
+      initialOpenTables[spec.id] = false;
+    });
+    setOpenTables(initialOpenTables);
+  }, []);
 
   const toggleTable = (id) => {
     setOpenTables((prev) => ({ ...prev, [id]: !prev[id] }));
   };
 
+  const expandAllTables = () => {
+    const isAnyTableOpen = Object.values(openTables).some((isOpen) => isOpen);
+    const newState = {};
+
+    for (const spec of especifictions) {
+      newState[spec.id] = !isAnyTableOpen;
+    }
+
+    setOpenTables(newState);
+  };
+
   return (
     <>
+      <div className="flex justify-between">
+        <h2 className="text-2xl font-semibold text-blue-62 lg:text-3xl mb-5">
+          ESPECIFICACIONES
+        </h2>
+        <button
+          className={"text-blue-85 font-bold hover:text-blue-62"}
+          onClick={expandAllTables}
+        >
+          {Object.values(openTables).some((isOpen) => isOpen)
+            ? "Cerrar todas las secciones"
+            : "Ampliar todas las secciones"}
+        </button>
+      </div>
       <div className="flex flex-col gap-5 h-auto">
         {especifictions.map((item, i) => (
           <div key={i}>

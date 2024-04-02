@@ -59,10 +59,7 @@ export default function Product() {
         </div>
 
         <Line />
-
-        <h2 className="text-2xl font-semibold text-blue-62 lg:text-3xl mb-5">
-          ESPECIFICACIONES
-        </h2>
+        
 
         <PorductEspecifications />
 
