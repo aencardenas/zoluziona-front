@@ -1,14 +1,17 @@
 import { useState } from "react";
 import { sendMail } from "../apis/api";
+import { formSchema } from "../validations/EmailValidation";
 
 export default function Form() {
   const [formData, setFormData] = useState({
-    name: '',
-    lastName: '',
-    email: '',
-    phoneNumber: '',
-    message: '',
+    name: "",
+    lastName: "",
+    email: "",
+    phoneNumber: "",
+    message: "",
   });
+
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     setFormData({
@@ -20,20 +23,33 @@ export default function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const resultado = await sendMail(formData);
+    try {
+      await formSchema.validate(formData, { abortEarly: false });
+      console.log("Formulario válido");
+      
+      const resultado = await sendMail(formData);
 
-    if (resultado.success) {
-      alert('Correo enviado con éxito');
-      // Reiniciar el formulario después de enviar el correo
-      setFormData({
-        name: '',
-        lastName: '',
-        email: '',
-        phoneNumber: '',
-        message: '',
+      if (resultado.success) {
+        alert("Correo enviado con éxito");
+        // Reiniciar el formulario después de enviar el correo
+        setFormData({
+          name: "",
+          lastName: "",
+          email: "",
+          phoneNumber: "",
+          message: "",
+        });
+      } 
+    } catch (error) {
+      const newErrors = {};
+
+      error.inner.forEach((error) => {
+        newErrors[error.path] = error.message;
       });
-    } else {
-      alert(resultado.error);
+
+      console.log(newErrors);
+
+      setErrors(newErrors);
     }
   };
 
@@ -48,6 +64,7 @@ export default function Form() {
           value={formData.name}
           onChange={handleChange}
         />
+        {errors.name && <p className="text-red-500 text-xs">{errors.name}</p>}
       </div>
       <div className="flex flex-col">
         <legend className="font-bold text-sm lg:text-base">Apellido</legend>
@@ -58,16 +75,20 @@ export default function Form() {
           value={formData.lastName}
           onChange={handleChange}
         />
+        {errors.lastName && (
+          <p className="text-red-500 text-xs">{errors.lastName}</p>
+        )}
       </div>
       <div className="flex flex-col">
         <legend className="font-bold text-sm lg:text-base">Correo</legend>
         <input
-          type="email"
+          type="text"
           className="border border-gray-600 rounded-lg p-2"
           name="email"
           value={formData.email}
           onChange={handleChange}
         />
+        {errors.email && <p className="text-red-500 text-xs">{errors.email}</p>}
       </div>
       <div className="flex flex-col">
         <legend className="font-bold text-sm lg:text-base">Teléfono</legend>
@@ -78,6 +99,9 @@ export default function Form() {
           value={formData.phoneNumber}
           onChange={handleChange}
         />
+        {errors.phoneNumber && (
+          <p className="text-red-500 text-xs">{errors.phoneNumber}</p>
+        )}
       </div>
       <div className="flex flex-col">
         <legend className="font-bold text-sm lg:text-base">
@@ -91,6 +115,9 @@ export default function Form() {
           value={formData.message}
           onChange={handleChange}
         ></textarea>
+        {errors.message && (
+          <p className="text-red-500 text-xs">{errors.message}</p>
+        )}
       </div>
       <button
         type="submit"
