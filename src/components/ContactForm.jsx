@@ -26,7 +26,7 @@ export default function Form() {
     try {
       await formSchema.validate(formData, { abortEarly: false });
       console.log("Formulario válido");
-      
+
       const resultado = await sendMail(formData);
 
       if (resultado.success) {
@@ -46,9 +46,6 @@ export default function Form() {
       error.inner.forEach((error) => {
         newErrors[error.path] = error.message;
       });
-
-      console.log(newErrors);
-
       setErrors(newErrors);
     }
   };
