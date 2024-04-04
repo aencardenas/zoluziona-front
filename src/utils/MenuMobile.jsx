@@ -98,7 +98,7 @@ export default function MenuMobile({ onClose }) {
           </div>
           <div className="flex items-center gap-x-4 hover:cursor-pointer hover:text-blue-85 w-fit">
             <svg
-              className="w-6 h-6 text-white hover:text-blue-85"
+              className="w-6 h-6 hover:text-blue-85"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
