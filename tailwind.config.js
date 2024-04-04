@@ -26,6 +26,11 @@ export default {
 
       fontFamily:{
         'montserrat': ["Montserrat", "sans-serif"]
+      },
+
+      backgroundImage: {
+        'banner-powerGreen': "url('/src/assets/images/power-green-banner.jpg')",
+        'banner-powerGreen-mobile': "url('/src/assets/images/power-green-banner-mobile.jpg')",
       }
     },
   },

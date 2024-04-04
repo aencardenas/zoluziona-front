@@ -40,6 +40,7 @@ export default function Header() {
             <li className="cursor-pointer hover:text-green-34"><Link to="/product">Producto</Link></li>
             <li className="cursor-pointer hover:text-green-34"><Link to="/characteristic">Características</Link></li>
             <li className="cursor-pointer hover:text-green-34"><Link to="/contact">Contacto</Link></li>
+            <li className="cursor-pointer hover:text-green-34"><Link to="/power-green">Power Green</Link></li>
           </ul>
         </div>
       </div>
