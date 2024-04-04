@@ -96,12 +96,12 @@ const TableElectricalEsp = () => {
 
   return (
     <>
-      <div className="flex justify-between">
-        <h2 className="text-2xl font-semibold text-blue-62 lg:text-3xl mb-5">
+      <div className="flex lg:justify-between flex-col lg:flex-row mb-5">
+        <h2 className="text-2xl font-semibold text-blue-62 lg:text-3xl">
           ESPECIFICACIONES
         </h2>
         <button
-          className={"text-blue-85 font-bold hover:text-blue-62"}
+          className={"text-blue-85 font-bold hover:text-blue-62 self-start"}
           onClick={expandAllTables}
         >
           {Object.values(openTables).some((isOpen) => isOpen)
