@@ -1,24 +1,27 @@
-import car from "../assets/icons/automovil.png";
-import lowSpeedCar from "../assets/icons/Carro-baja-velocidad.png";
-import golfCar from "../assets/icons/carro-golf.png";
-import home from "../assets/icons/casa.png";
-import electronics from "../assets/icons/electronicos.png";
-import eolic from "../assets/icons/energia-eolica.png";
-import solar from "../assets/icons/energia-solar.png";
-import boat from "../assets/icons/lancha.png";
-import games from "../assets/icons/videojuegos.png";
+import autoElectrico from "../assets/icons/autosElectricos.webp";
+import golfCar from "../assets/icons/carroGolf.webp";
+import home from "../assets/icons/hogar.webp";
+import electronics from "../assets/icons/electronicos.webp";
+import eolic from "../assets/icons/eolica.webp";
+import solar from "../assets/icons/solar.webp";
+import boat from "../assets/icons/marinas.webp";
+import games from "../assets/icons/videojuegos.webp";
+import camping from "../assets/icons/camping.webp";
+import lowSpeedCar from "../assets/icons/lowSpeedCar.webp";
 
 export default function ApplicationsHome() {
 
     const applications = [
-        { image: lowSpeedCar, text: 'Autos eléctricos' },
+        { image: autoElectrico, text: 'Autos eléctricos' },
         { image: golfCar, text: 'Carro de golf' },
         { image: boat, text: 'Marinas' },
         { image: home, text: 'Hogar' },
         { image: electronics, text: 'Electrónicos' },
         { image: solar, text: 'Solar' },
         { image: games, text: 'Videojuegos' },
-        { image: eolic, text: 'Eólica' }
+        { image: eolic, text: 'Eólica' },
+        { image: camping, text: 'RV Camping' },
+        { image: lowSpeedCar, text: 'Low Speed Car' },
     ]
     return (
 
