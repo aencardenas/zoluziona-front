@@ -25,7 +25,7 @@ export default function Form() {
 
     try {
       await formSchema.validate(formData, { abortEarly: false });
-      console.log("Formulario válido");
+      setErrors({});
 
       const resultado = await sendMail(formData);
 
