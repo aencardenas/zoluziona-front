@@ -8,6 +8,7 @@ import Footer from "../utils/Footer";
 import batteryImage from "../assets/images/battery.png";
 import Modal from "../utils/Modal";
 import ProductPaymentConditions from "../components/ProductPaymentConditions";
+import { Link } from "react-router-dom";
 
 export default function Product() {
   const [open, setOpen] = useState(false);
@@ -36,7 +37,7 @@ export default function Product() {
             <h2 className="text-2xl font-semibold text-blue-62 lg:text-3xl mb-3">
               LiFePO4
             </h2>
-            <p className="text-sm lg:text-xl">
+            <p className="text-sm lg:text-xl text-justify">
               Las baterías de fosfato de hierro y litio (LiFePO4) destacan por
               su mayor potencia de salida, carga rápida, peso reducido y vida
               útil prolongada. En comparación con las baterías de iones de litio
@@ -55,21 +56,31 @@ export default function Product() {
           <h2 className="text-2xl font-semibold text-blue-62 lg:text-3xl mb-5">
             FICHA TECNICA
           </h2>
-          <ProductButton text="Desgargar ficha" />
+          <div className="max-w-max">
+            <ProductButton text="Desgargar ficha" />
+          </div>
         </div>
 
         <Line />
-        
 
         <PorductEspecifications />
 
         <Line />
-        <div className="flex flex-col gap-3 max-w-[450px]">
+        <div className="flex flex-col gap-3">
           <h2 className="text-2xl font-semibold text-blue-62 lg:text-3xl mb-2">
             PRECIOS
           </h2>
-          <ProductButton text="Cotiza con nosotros" onClick={handleOpen} />
-          <ProductButton text="Condiciones de pago" onClick={handleOpen2} />
+
+          <div className="flex flex-col gap-3 max-w-full lg:w-[320px]">
+            <ProductButton
+              text="Consulta nuestros precios"
+              onClick={handleOpen}
+            />
+            <ProductButton text="Condiciones de pago" onClick={handleOpen2} />
+            <Link to="/contact">
+              <ProductButton text="Contáctanos" />
+            </Link>
+          </div>
         </div>
 
         <Modal open={open} onClose={handleOpen}>
@@ -80,11 +91,14 @@ export default function Product() {
                 <p>2 baterias</p>
               </div>
               <div className="text-green-34">
-                <p>$950.00 USD</p>
-                <p>$1,760.00 USD</p>
+                <p>$999.00 USD</p>
+                <p>$1,899.00 USD</p>
               </div>
             </div>
-            <p className="text-xs">* Los precios ya incluyen IVA</p>
+            <div>
+              <p className="text-xs">* Los precios ya incluyen IVA</p>
+              <p className="text-xs">* Sujetos a cambios sin previo aviso</p>
+            </div>
           </div>
         </Modal>
 

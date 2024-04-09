@@ -18,7 +18,7 @@ export default function CharacteristicsHome() {
         "Alta densidad de energía": energyDensity,
         "Baja tasa de autodescarga": discharge,
         "Amplio rango de temperatura": temperature,
-        "Ecofriendly": ambient,
+        "Respeto al medio ambiente": ambient,
         "Diseño liviano": ambient,
         "Cero mantenimiento": security
     }

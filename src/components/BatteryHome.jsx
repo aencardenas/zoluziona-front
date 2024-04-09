@@ -14,7 +14,7 @@ export default function BatteryHome() {
                         <img src={batteryImage} alt="Zoluziona Battery" className="w-56 lg:order-first" />
                         <div className="flex flex-col gap-y-4 items-center">
                             <h1 className="font-bold text-white text-3xl text-center lg:font-bold lg:text-[40px]">El poder del litio LiFePO4</h1>
-                            <p className="text-white text-base text-center lg:font-normal lg:text-xl">La mejor opción para aplicaciones marinas y de golf</p>
+                            <p className="text-white text-base text-center lg:font-normal lg:text-xl">La mejor opción para aplicaciones para marina, golf y más</p>
                             <Link to="/product">
                                 <HomeButton text="Ver detalles" />
                             </Link>

@@ -12,8 +12,8 @@
       "name": "Ciclo de vida prolongado",
       "descriptions": [
         "Ofrecen una mayor estabilidad térmica y una estabilidad inherente, lo que las hace altamente seguras.",
-        "Capacidad de más de 3,500 ciclos de funcionamiento.",
-        "Ahorro significativo a largo plazo, ya que no es necesario reemplazarlas con frecuencia.",
+        "Capacidad de más de 3,500 ciclos de carga.",
+        "Ahorro significativo a largo plazo, garantía de 8 años.",
         "Estabilidad química inherente garantiza una degradación mínima con el tiempo, a diferencia de otras baterías de iones de litio y plomo ácido.",
         "Ofrecen una fuente de energía confiable y duradera a lo largo del tiempo."
       ],
@@ -41,21 +41,22 @@
     {
       "name": "Baja tasa de autodescarga",
       "descriptions": [
-        "Nuestras baterías tienen una baja tasa de autodescarga, exhiben una pérdida de energía mínima con el tiempo y reduce la necesidad de recargas o mantenimiento frecuentes."
+        "Nuestras baterías tienen una baja tasa de autodescarga, exhiben una pérdida de energía mínima con el tiempo y reduce la necesidad de recargas o mantenimiento frecuentes.",
+        "Tasa de autodescarga ≤3.5% por mes a 25º C"
       ],
       "img": "tasa-descarga.webp"
     },
     {
       "name": "Amplio rango de temperatura",
       "descriptions": [
-        "Amplio rango de temperatura de funcionamiento, lo que les permite operar eficientemente tanto en entornos de altas temperaturas, hasta 60º C, como en condiciones de baja temperatura.",
+        "Amplio rango de temperatura de funcionamiento, lo que les permite operar eficientemente en un amplio espectro de temperaturas, desde -20º C hasta 60º C.",
         "Ideales para aplicaciones en climas cálidos o bajo cargas térmicas intensas.",
         "Rendimiento superior a temperaturas bajas en comparación con otras tecnologías químicas de baterías."
       ],
       "img": "temperatura.webp"
     },
     {
-      "name": "Ecofriendly",
+      "name": "Respeto al medio ambiente",
       "descriptions": [
         "Química más ecológica en comparación con otras tecnologías de iones de litio y plomo-ácido.",
         "Libres de materiales tóxicos como cobalto y plomo, lo que facilita su reciclaje y contribuye a una solución energética más sostenible.",
