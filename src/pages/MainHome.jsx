@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 export default function MainHome() {
   return (
     <>
+    <div className="h-screen">
       <div className="bg-blue-85 h-[50vh] flex flex-col gap-4 justify-center items-center lg:flex-row">
         <img src={powerLogo} alt="logo" className="w-64 lg:w-[26rem]" />
         <Link to="/home">
@@ -18,6 +19,8 @@ export default function MainHome() {
           <Button text="Conoce más" textColor="text-green-34" bgHover="bg-white" bgActive="bg-white" />
         </Link>
       </div>
+    </div>
+      
     </>
   );
 }
