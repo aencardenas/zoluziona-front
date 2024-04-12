@@ -8,6 +8,7 @@ import Footer from "../utils/Footer";
 import batteryImage from "../assets/images/battery.png";
 import Modal from "../utils/Modal";
 import ProductPaymentConditions from "../components/ProductPaymentConditions";
+import fichaTecnica from "/ficha-tecnica.pdf";
 import { Link } from "react-router-dom";
 
 export default function Product() {
@@ -57,7 +58,7 @@ export default function Product() {
             FICHA TECNICA
           </h2>
           <div className="max-w-max">
-            <ProductButton text="Desgargar ficha" />
+            <ProductButton text="Desgargar ficha" downloadURL={fichaTecnica} />
           </div>
         </div>
 
