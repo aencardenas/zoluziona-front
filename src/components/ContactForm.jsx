@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { sendMail } from "../apis/api";
 import { formSchema } from "../validations/EmailValidation";
+import Swal from "sweetalert2";
 
 export default function Form() {
   const [formData, setFormData] = useState({
@@ -33,7 +34,13 @@ export default function Form() {
 
       if (resultado.success) {
         setLoading(false);
-        alert("Correo enviado con éxito");
+        Swal.fire({
+          title: "Correo enviado con éxito",
+          icon: "success",
+          confirmButtonText: "Aceptar",
+          confirmButtonColor: "#33A835"
+        })
+
         // Reiniciar el formulario después de enviar el correo
         setFormData({
           name: "",
@@ -128,7 +135,7 @@ export default function Form() {
           Enviar
         </button>
 
-        <div className={`${(loading && Object.keys(errors).length === 0) ? '' : ''}`}>
+        <div className={`${(loading && Object.keys(errors).length === 0) ? '' : 'hidden'}`}>
           <svg
             aria-hidden="true"
             className="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-green-34"
